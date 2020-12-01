@@ -15,7 +15,7 @@ const styles = {
     },
     colors: {
         backgroundColor: "#fff",
-        height: "150px",
+        height: "145px",
         width: "100%",
         borderRadius: "5px",
         overflow: "hidden"
@@ -54,7 +54,7 @@ function MiniPalette(props){
     ))
     return(
 
-        <div className = {classes.root}>
+        <div className = {classes.root} onClick = {props.handleClick}>
             <div className = {classes.colors}> 
                 {miniColorBoxes}
             </div>
