@@ -34,7 +34,7 @@ class NavBar extends Component{
                 </div>
 
                 {showingAllColors && <div className="slider-container">
-                    <span>Level: {level}</span>
+                    <span>Level: {level} </span>
                     <div className = "slider">
                         <Slider defaultValue={level}
                             min={100}
@@ -47,7 +47,6 @@ class NavBar extends Component{
                                 boxShadow: 'none',
                                 width: '13px',
                                 height: '13px',
-                                marginLeft: '-7px',
                                 marginTop: '-2px'}}
                             railStyle={{height: '10px'}}
                             onAfterChange={changeLevel}/>
